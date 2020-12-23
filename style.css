@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --intro-emailBG: hsl(217, 28%, 15%);
+  /*Dark Blue*/
+  --mainBG: hsl(218, 28%, 13%);
+  /*Dark Blue*/
+  --footerBG: hsl(216, 53%, 9%);
+  /*Dark Blue*/
+  --testimonialsBG: hsl(219, 30%, 18%);
+  /*Dark Blue*/
+  --call-to-action-gradient1: hsl(176, 68%, 64%);
+  /* Cyan  (inside call-to-action gradient) */
+  --call-to-action-gradient2: hsl(198, 60%, 50%);
+  /* Blue  (inside call-to-action gradient) */
+  --main-btn-linear-gradient: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  --error: hsl(0, 100%, 63%);
+  /*Light Red */
+  --White: hsl(0, 0%, 100%);
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, div {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  background-color: var(--mainBG);
+  color: var(--White);
+}
