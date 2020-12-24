@@ -35,5 +35,45 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   background-color: var(--mainBG);
-  color: var(--White);
+	color: var(--White);
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input[type="submit"],
+nav {
+  font-family: "Raleway", sans-serif;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	padding: 50px 100px;
+	justify-content: center;
+	max-width: 1640px;
+}
+.nav-links-wrapper{
+	margin-left: auto;
+}
+
+.container {
+	margin-inline: auto !important;
+	max-width: min(90%,1640px);
+}
+
+.features{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 80px;
+	align-items: center;
+	justify-content: center;
+	max-width: min(90%,1640px);
+	margin-inline: auto;
+}
+.feature-wrapper{
+	margin-inline: auto;
+	width: 300px;
 }
