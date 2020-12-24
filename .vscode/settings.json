@@ -1,9 +1,11 @@
 {
 	"html.suggest.html5": true,
 	"html.format.wrapAttributes": "aligned-multiple",
+	"html.format.wrapLineLength": 0,
 	"editor.fontSize": 14,
-	"editor.formatOnSave": true,
 	"[html]": {
-		"editor.foldingStrategy": "indentation"
+		"editor.foldingStrategy": "indentation",
+		"editor.formatOnSave": true
 	},
+	"editor.formatOnSave": true,
 }
