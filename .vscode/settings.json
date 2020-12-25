@@ -2,10 +2,11 @@
 	"html.suggest.html5": true,
 	"html.format.wrapAttributes": "aligned-multiple",
 	"html.format.wrapLineLength": 0,
-	"editor.fontSize": 20,
+	"editor.fontSize": 16,
 	"[html]": {
 		"editor.foldingStrategy": "indentation",
 		"editor.formatOnSave": true
 	},
 	"editor.formatOnSave": true,
+	"window.zoomLevel": 1.5,
 }
