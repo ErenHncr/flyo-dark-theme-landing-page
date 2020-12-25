@@ -54,6 +54,7 @@ nav{
 	padding: 50px 100px;
 	justify-content: center;
 	max-width: 1640px;
+	background-color: var(--intro-emailBG);
 }
 .nav-links-wrapper{
 	margin-left: auto;
@@ -66,14 +67,209 @@ nav{
 
 .features{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 80px;
+	grid-template-columns: repeat(2, minmax(320px, 1fr));
+	gap: 3rem;
+	row-gap: 3rem;
 	align-items: center;
 	justify-content: center;
 	max-width: min(90%,1640px);
 	margin-inline: auto;
+	padding-block: 6rem;
 }
 .feature-wrapper{
 	margin-inline: auto;
 	width: 300px;
+	text-align: center;
+	line-height: 16.1px;
 }
+.feature-heading{
+	line-height: 1.15rem;
+}
+.feature-subtitle{
+	line-height: 1.3rem;
+}
+
+.nav-link{
+	color: var(--White);
+	text-decoration: none;
+	margin-right: 32px;
+}
+.nav-link:hover{
+	text-decoration: underline;
+}
+
+header.intro{
+	max-width: 1640px;
+	display: flex;
+	-webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+					align-items: center;
+					text-align: center;
+	background: url("../images/bg-curvy-desktop.svg"), var(--intro-emailBG);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-bottom: 6rem;
+}
+
+header.intro .intro-img{
+	max-width: 600px;
+}
+
+header.intro h1{
+	max-width: 30ch;
+	margin-top: 0.67rem;
+}
+
+header.intro p{
+	max-width: 55ch;
+	margin-top: 0.67rem;
+}
+
+.main-btn {
+  cursor: pointer;
+  border-radius: 34px;
+  padding: 0.6rem 2rem;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  background: var(--main-btn-linear-gradient);
+}
+.main-btn:hover{
+	background: var(--call-to-action-gradient1);
+}
+.main-btn:focus{
+	outline: none;
+}
+
+.slogan-wrapper{
+	max-width: 1640px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 6rem 5%;
+}
+
+.slogan-image{
+	width: 100%
+}
+
+.slogan-heading{
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.15;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+}
+.slogan-text-wrapper{
+	margin: 4rem 0rem 0rem 3rem;
+	line-height: 1.3rem;
+}
+.slogan-subtitle .nav-link{
+	color: var(--call-to-action-gradient1);
+	text-decoration: underline;
+	font-size: 16px;
+	line-height: 1.15;
+}
+.slogan-subtitle .nav-link:hover{
+	color: var(--White);
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 1.15;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/bg-quotes.png") no-repeat;
+  background-position: left 5vw top;
+	padding-top: 2rem;
+	margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 1640px;
+}
+
+.testimonials .testimonial {
+  width: 330px;
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  background: var(--testimonialsBG);
+}
+
+.testimonials .user-img {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonials .user-wrapper{
+	display: flex;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 1rem;
+}
+.testimonials .user-wrapper .user-info{
+	margin-left: 1rem;
+}
+.testimonials .user-wrapper p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.email-area{
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--intro-emailBG);
+  margin: 0 25vw;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+.email-area-header{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.15;
+}
+.email-area-subtitle{
+	font-size: 14px;
+	line-height: 1.3rem;
+}
+
+.email-form input[type="email"]{
+	border: none;
+	width: 26rem;
+	border-radius: 13rem;
+	line-height: 1.15;
+	letter-spacing: normal;
+	font-size: 14px;
+	padding: .6rem 2rem;
+	font-family: "Open Sans", sans-serif;
+}
+
+.email-form input[type="email"]:focus{
+	outline: none;
+}
+
+.email-form input[type="submit"]{
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.15;
+}
+
